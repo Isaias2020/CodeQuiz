@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<!-- Changed body class to "container" from "wrapper" -->
+
+<body class="container">
+    <div class="startQuiz">
+        <header>
+            <h1>Coding Quiz Challenge</h1>
+
+        </header>
+        <main class="card" id="question-container">
+            <header class="card-header">
+                <h2>Welcome!</h2>
+            </header>
+            <section class="card-body">
+                <p>Try to answer the following questions within the given time limit. You will be asked a
+                    series of questions relating to what we have gone over within the past few weeks. Good Luck!</p>
+            </section>
+            <!-- changed class from "card-footer" below-->
+            <footer class="quiz">
+                <button id="start" class="btn">Start Quiz</button>
+            </footer>
+        </main>
+    </div>
+    <div class="questionsDiv">
+        <main class="card">
+            <header class="card-header">
+                <p class="time float-right">Timer </p>
+                <p id="question">Question</p>
+            </header>
+            <section class="multiple-choice">
+                <button id="answer1" class="btn1">Answer 1</button>
+                <button id="answer2" class="btn1">Answer 2</button>
+                <button id="answer3" class="btn1">Answer 3</button>
+                <button id="answer4" class="btn1">Answer 4</button>
+            </section>
+        </main>
+    </div>
+    <div class="gameOver">
+        <form class="container">
+            <main class="card" id="question container">
+                <header class="card-header">
+                    <h2>Quiz Over!</h2>
+                </header>
+                <div class="form-group">
+                    <p class="score"> Your score: </p>
+                    <label for="initials">Enter Initials: </label>
+                    <input type="text" class="form-control" id="initials">
+
+                </div>
+                <footer class="quiz">
+                    <button type="submit" class="btn">Submit</button>
+                </footer>
+            </main>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
